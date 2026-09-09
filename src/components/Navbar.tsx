@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, Phone } from "lucide-react";
 import { whatsappLink } from "@/lib/whatsapp";
+import { asset } from "@/lib/asset";
 
 const links = [
   { href: "#services", label: "Serviços" },
@@ -15,7 +16,7 @@ const Navbar = () => {
   return (
     <nav data-gtm-section="menu" className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <img className="logo" alt="Logo Dra. Ana Paula Machado" src="/img/logo.svg" />
+        <img className="logo" alt="Logo Dra. Ana Paula Machado" src={asset("img/logo.svg")} />
 
         <div className="hidden md:flex space-x-8">
           {links.map((link) => (

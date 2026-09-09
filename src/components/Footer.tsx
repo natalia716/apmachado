@@ -1,5 +1,6 @@
 import { Instagram, Mail, MapPin, MessageCircle, Phone, Scale } from "lucide-react";
 import { whatsappLink } from "@/lib/whatsapp";
+import { asset } from "@/lib/asset";
 
 const Footer = () => (
   <footer data-gtm-section="rodape" className="bg-primary text-white py-12">
@@ -11,7 +12,7 @@ const Footer = () => (
             <img
               className="logo-footer"
               alt="Logo Dra. Ana Paula Machado"
-              src="/img/logo-footer.svg"
+              src={asset("img/logo-footer.svg")}
             />
           </div>
           <p className="mb-4">
