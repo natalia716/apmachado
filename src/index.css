@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800;
+  }
+
+  li {
+    list-style-type: disc;
+    margin-left: 16px;
+  }
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(65, 12, 21, 0), rgba(40, 3, 10, 0.3)),
+    url("/img/banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #670a08;
+}
+
+.logo,
+.logo-footer {
+  width: 200px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #dacbb6;
+}
+
+/* widget WhatsApp */
+.whatsapp-widget {
+  transition: all 0.3s ease;
+}
+.whatsapp-widget:hover {
+  transform: scale(1.1);
+}
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-bg {
+    background-image: url("/img/banner-mobile.png");
+    background-size: auto;
+    background-position: top !important;
+    background-repeat: no-repeat;
+    background-color: #670a08;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero-bg {
+    background-position: left;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .logo-footer {
+    width: 100%;
+  }
+}
