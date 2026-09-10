@@ -15,7 +15,7 @@ const Contact = () => (
         data-aos-delay="200"
       >
         <a
-          href={whatsappLink("Gostaria de garantir meu direito à saúde")}
+          href={whatsappLink()}
           className="bg-white text-primary font-bold px-6 py-3 rounded-md hover:bg-gray-100 transition"
         >
           Entre em contato agora

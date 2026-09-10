@@ -164,14 +164,14 @@
         "accountId": "0",
         "containerId": "0",
         "triggerId": "1",
-        "name": "Clique - Link WhatsApp (wa.me)",
+        "name": "Clique - Link WhatsApp (tintim.link ou wa.me)",
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "CONTAINS",
+            "type": "MATCH_REGEX",
             "parameter": [
               { "type": "TEMPLATE", "key": "arg0", "value": "{{Click URL}}" },
-              { "type": "TEMPLATE", "key": "arg1", "value": "wa.me" }
+              { "type": "TEMPLATE", "key": "arg1", "value": "tintim\\.link|wa\\.me" }
             ]
           }
         ],

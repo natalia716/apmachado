@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
 
         <a
-          href={whatsappLink("Gostaria de falar com um advogado especialista")}
+          href={whatsappLink()}
           className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition"
         >
           <Phone className="w-4 h-4" />

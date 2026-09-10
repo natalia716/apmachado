@@ -7,7 +7,6 @@ type Service = {
   intro: string;
   items: string[];
   closing?: string;
-  message: string;
   listSpacing: string;
 };
 
@@ -23,7 +22,6 @@ const services: Service[] = [
     ],
     closing:
       "Nosso trabalho é assegurar que esses direitos sejam respeitados, buscando a cobertura integral do tratamento necessário.",
-    message: "Gostaria de falar sobre negativa de cobertura",
     listSpacing: "mb-6",
   },
   {
@@ -38,7 +36,6 @@ const services: Service[] = [
     ],
     closing:
       "Atuamos para suspender judicialmente reajustes abusivos e restabelecer contratos cancelados de forma irregular.",
-    message: "Gostaria de falar sobre reajuste abusivo",
     listSpacing: "mb-4",
   },
   {
@@ -51,7 +48,6 @@ const services: Service[] = [
       "Tratamentos fora do rol da ANS;",
       "Cobertura negada para terapias de alto custo.",
     ],
-    message: "Gostaria de falar sobre medicamento de alto custo",
     listSpacing: "mb-6",
   },
   {
@@ -64,7 +60,6 @@ const services: Service[] = [
       "Direito à restituição dos valores pagos indevidamente desde o diagnóstico, limitado ao período dos últimos cinco anos;",
       "Possibilidade de requerimento administrativo ou judicial.",
     ],
-    message: "Gostaria de falar sobre negativa do SUS",
     listSpacing: "mb-6",
   },
 ];
@@ -100,7 +95,7 @@ const Services = () => (
               </ul>
               {service.closing && <p className="mb-4 italic">{service.closing}</p>}
               <a
-                href={whatsappLink(service.message)}
+                href={whatsappLink()}
                 className="inline-block bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition"
               >
                 Fale Agora

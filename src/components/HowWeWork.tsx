@@ -61,7 +61,7 @@ const HowWeWork = () => (
 
       <div className="text-center mt-10" data-aos="fade-up" data-aos-delay="500">
         <a
-          href={whatsappLink("Gostaria de solicitar atendimento imediato")}
+          href={whatsappLink()}
           className="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-secondary transition font-bold"
         >
           Solicitar atendimento imediato

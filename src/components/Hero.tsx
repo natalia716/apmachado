@@ -14,7 +14,7 @@ const Hero = () => (
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href={whatsappLink("Gostaria de falar com um advogado especialista")}
+            href={whatsappLink()}
             className="bg-white text-primary font-bold px-6 py-3 rounded-md hover:bg-gray-100 transition text-center"
           >
             Fale agora com um especialista

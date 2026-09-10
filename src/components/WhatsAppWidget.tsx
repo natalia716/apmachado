@@ -8,7 +8,7 @@ const WhatsAppWidget = () => {
   return (
     <div data-gtm-section="widget-flutuante" className="fixed bottom-6 right-6 z-50">
       <a
-        href={whatsappLink("Gostaria de garantir meu direito à saúde")}
+        href={whatsappLink()}
         target="_blank"
         rel="noopener noreferrer"
         className={`whatsapp-widget bg-green-500 text-white p-4 rounded-full shadow-lg flex items-center justify-center ${pulse ? "pulse-animation" : ""}`}

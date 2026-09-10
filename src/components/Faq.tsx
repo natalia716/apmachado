@@ -73,7 +73,7 @@ const Faq = () => {
 
         <div className="text-center mt-12" data-aos="fade-up" data-aos-delay="600">
           <a
-            href={whatsappLink("Gostaria de tirar uma dúvida")}
+            href={whatsappLink()}
             className="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-secondary transition font-bold"
           >
             Entre em contato e proteja seus direitos
